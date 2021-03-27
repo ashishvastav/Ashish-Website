@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SideComponent } from './side/side.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'work', component: WorkComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'footer', component: FooterComponent },
+  { path: 'side', component: SideComponent },
 ];
 
 @NgModule({

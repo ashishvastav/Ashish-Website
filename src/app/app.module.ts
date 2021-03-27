@@ -1,5 +1,7 @@
+import { SideNavComponent } from './side-nav/side-nav.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +16,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { SideComponent } from './side/side.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +26,23 @@ import { MatListModule } from '@angular/material/list';
     WorkComponent,
     ResumeComponent,
     FooterComponent,
+    SideNavComponent,
+    SideComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    LayoutModule,
+    MatSidenavModule,
+    MatListModule,
+  ],
+  exports: [
+    BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MatToolbarModule,
     MatIconModule,

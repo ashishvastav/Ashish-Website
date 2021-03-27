@@ -1,14 +1,24 @@
-<mat-toolbar color="primary">
-    <mat-icon>menu</mat-icon>
-    <span>AshishS</span>
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav [opened]="opened" mode="side" position="start">
+        left panel
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+            <span>AshishS</span>
 
-    <div class="spacer"></div>
+            <div class="spacer"></div>
 
-    <a mat-button routerLink="home">Home</a>
-    <a mat-button routerLink="about">About</a>
-    <a mat-button routerLink="work">Work</a>
-    <a mat-button routerLink="">Resume</a>
-    <a mat-raised-button color="accent" routerLink="">SignUp</a>
-</mat-toolbar>
+            <a mat-button routerLink="home">Home</a>
+            <a mat-button routerLink="about">About</a>
+            <a mat-button routerLink="work">Work</a>
+            <a mat-button routerLink="">Resume</a>
+            <a mat-raised-button color="accent" routerLink="">SignUp</a>
+        </mat-toolbar>
+        <div class="main-content">Main content area</div>
 
-<router-outlet></router-outlet>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
