@@ -1,0 +1,37 @@
+<header>
+    <div> <a href="index.html" class="nav-links logo">AshishS</a>
+    </div>
+
+
+    <div class="menuu-bnt" [ngClass]="status ? 'close' : ''" (click)="menuT();">
+
+        <div class="bnt-line"></div>
+        <div class="bnt-line"></div>
+        <div class="bnt-line"></div>
+    </div>
+
+    <nav class="menuu" [ngClass]="status ? 'show' : ''">
+        <div class="menuu-branding" [ngClass]="status ? 'show' : ''">
+            <div class="portrait"></div>
+        </div>
+        <ul class="menuu-nav" [ngClass]="status ? 'show' : ''">
+            <li class="nav-items current" [ngClass]="status ? 'show' : ''">
+                <a href="/home" class="nav-links">Home</a>
+            </li>
+            <li class="nav-items" [ngClass]="status ? 'show' : ''">
+                <a href="/about" class="nav-links">About Me</a>
+            </li>
+            <li class="nav-items" [ngClass]="status ? 'show' : ''">
+                <a href="work.html" class="nav-links">My Work</a>
+            </li>
+            <li class="nav-items" [ngClass]="status ? 'show' : ''">
+                <a href="resume.html" class="nav-links">Resume</a>
+            </li>
+            <li class="nav-items" [ngClass]="status ? 'show' : ''">
+                <a href="contact.html" class="nav-links">How to reach me</a>
+            </li>
+
+        </ul>
+
+    </nav>
+</header>

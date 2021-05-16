@@ -1,0 +1,49 @@
+@import '../../styles.scss';
+.home-name {
+    padding-left: 50px;
+    margin-top: 30px;
+    .name {
+        font-size: 50px;
+        .surname {
+            color: $primary-color;
+        }
+    }
+    .responsibility {
+        font-size: 30px;
+    }
+    .htmlimg {
+        width: 50px;
+        height: 50px;
+        margin: 20px;
+        // padding-top: 50px;
+    }
+}
+
+.imgSide {
+    animation-name: moveInleft;
+    animation-duration: 3s;
+    margin-top: 30px;
+}
+
+.icon {
+    padding: 50px;
+    /* margin-top: 10px; */
+    a:hover {
+        color: black;
+        transition: all .5s ease-out;
+    }
+}
+
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(800px);
+    }
+    80% {
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
